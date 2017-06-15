@@ -897,11 +897,9 @@ typedef struct _DecStruct
 
     /* slice Header Simplification */
     UWORD8 u1_pr_sl_type;
-    UWORD8 u1_sl_typ_5_9;
     WORD32 i4_frametype;
     UWORD32 u4_app_disp_width;
     WORD32 i4_error_code;
-    UWORD8 u1_first_pb_nal_in_pic;
     UWORD32 u4_bitoffset;
 
     /* Variables added to handle field pics */
@@ -1249,6 +1247,7 @@ typedef struct _DecStruct
     UWORD32 u4_cur_bs_mb_num;
     UWORD32 u4_bs_cur_slice_num_mbs;
     UWORD32 u4_cur_deblk_mb_num;
+    UWORD32 u4_sps_cnt_in_process;
     volatile UWORD16 u2_cur_slice_num_bs;
 
     UWORD32 u4_deblk_mb_x;
